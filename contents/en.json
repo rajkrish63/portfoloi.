@@ -1,0 +1,175 @@
+{
+    "hero": {
+        "title": "I *build* products that *live* at the edge of *web*, *mobile*, and *AI*",
+        "stats": "***Internship*** & Job Ready"
+    },
+    "about": {
+        "intro": "A developer who builds *real-world products* and solves problems that actually *matter*.",
+        "description": "A *full stack and mobile-first* mindset — comfortable across frontend, backend, and AI integration, with a habit of **learning through building** and a commitment to ***clean, scalable code***.",
+        "full": "I am a B.Tech Information Technology student graduating in 2026, based in Tamil Nadu, India. My approach to software development has always been project-first — I learn best when I am building something real that solves an actual problem.\n\nOn the frontend, I work primarily with React and Next.js, using TypeScript for reliability and Tailwind CSS to move fast without losing quality. For mobile, I build production-grade apps with React Native and Expo — cross-platform, performant, and user-friendly.\n\nMy backend work centres around Node.js and Express.js, designing RESTful APIs that are clean, versioned, and maintainable. I use MongoDB and Firebase for flexible data needs, and MySQL when structured schemas are a better fit.\n\nOne area I'm deeply invested in is AI integration — not in a hype-driven way, but practically. I've built offline AI applications using local LLMs (via Ollama), speech-to-text with Whisper, and RAG-based document Q&A systems. My goal is always to make AI useful in real workflows, especially in resource-constrained environments.\n\nI care about the architecture behind what I build. A working product that is unmaintainable is a failure. I prefer to take the time to understand the problem deeply before writing code, and I hold a high bar for readability and consistency in everything I ship.\n\nI am actively looking for Full Stack, React Native, or AI-related internships and job opportunities where I can contribute meaningfully from day one."
+    },
+    "manifesto": {
+        "items": [
+            "CONTINUOUS LEARNING",
+            "USER-CENTRIC DEVELOPMENT",
+            "CLEAN CODE",
+            "PROBLEM SOLVING",
+            "SCALABLE ARCHITECTURE",
+            "AI-DRIVEN INNOVATION"
+        ]
+    },
+    "stack": {
+        "items": [
+            {
+                "title": "Frontend Technologies",
+                "items": [
+                    { "name": "React", "icon": "https://cdn.simpleicons.org/react" },
+                    { "name": "Next.js", "icon": "https://cdn.simpleicons.org/nextdotjs" },
+                    { "name": "TypeScript", "icon": "https://cdn.simpleicons.org/typescript" },
+                    { "name": "JavaScript", "icon": "https://cdn.simpleicons.org/javascript" },
+                    { "name": "Tailwind CSS", "icon": "https://cdn.simpleicons.org/tailwindcss" },
+                    { "name": "Zustand", "icon": "https://cdn.simpleicons.org/zustand" },
+                    { "name": "Framer Motion", "icon": "https://cdn.simpleicons.org/framer" },
+                    { "name": "HTML5", "icon": "https://cdn.simpleicons.org/html5" },
+                    { "name": "CSS3", "icon": "https://www.svgrepo.com/show/452185/css-3.svg" }
+                ]
+            },
+            {
+                "title": "Mobile Development",
+                "items": [
+                    { "name": "React Native", "icon": "https://cdn.simpleicons.org/react" },
+                    { "name": "Expo", "icon": "https://cdn.simpleicons.org/expo" },
+                    { "name": "TypeScript", "icon": "https://cdn.simpleicons.org/typescript" },
+                    { "name": "Zustand", "icon": "https://cdn.simpleicons.org/zustand" }
+                ]
+            },
+            {
+                "title": "Backend & Databases",
+                "items": [
+                    { "name": "Node.js", "icon": "https://cdn.simpleicons.org/nodedotjs" },
+                    { "name": "Express.js", "icon": "https://cdn.simpleicons.org/express" },
+                    { "name": "MongoDB", "icon": "https://cdn.simpleicons.org/mongodb" },
+                    { "name": "PostgreSQL", "icon": "https://cdn.simpleicons.org/postgresql" },
+                    { "name": "Prisma ORM", "icon": "https://cdn.simpleicons.org/prisma" },
+                    { "name": "Firebase", "icon": "https://cdn.simpleicons.org/firebase" },
+                    { "name": "MySQL", "icon": "https://cdn.simpleicons.org/mysql" }
+                ]
+            },
+            {
+                "title": "AI & Tools",
+                "items": [
+                    { "name": "Ollama", "icon": "https://cdn.simpleicons.org/ollama" },
+                    { "name": "LangChain", "icon": "https://cdn.simpleicons.org/langchain" },
+                    { "name": "Python", "icon": "https://cdn.simpleicons.org/python" },
+                    { "name": "Docker", "icon": "https://cdn.simpleicons.org/docker" },
+                    { "name": "Git", "icon": "https://cdn.simpleicons.org/git" },
+                    { "name": "GitHub", "icon": "https://cdn.simpleicons.org/github" },
+                    { "name": "Postman", "icon": "https://cdn.simpleicons.org/postman" },
+                    { "name": "Figma", "icon": "https://cdn.simpleicons.org/figma" }
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "intro": "Real-world *applications* built across *web*, *mobile*, and *AI* — each one solving a problem worth solving.",
+        "items": [
+            {
+                "id": "1",
+                "title": "Transcriber AI",
+                "category": "AI / Mobile",
+                "year": "2025",
+                "description": "An offline-first AI transcription and analysis app built with React Native. Records live audio, transcribes speech in real time, generates structured meeting summaries, and provides searchable transcript history — all without an internet connection.",
+                "image": "/projects/ai-learning-assistant.jpg",
+                "repo": "https://github.com/rajkrish63/Transcriber-Ai",
+                "stack": ["React Native", "Whisper", "Ollama", "Node.js", "Local LLMs"]
+            },
+            {
+                "id": "2",
+                "title": "Mahendra R&D Hub",
+                "category": "Web Application",
+                "year": "2024",
+                "description": "A full-stack facility management platform built for a research institution — featuring a public access portal, real-time admin dashboard, booking and approval workflows, and a resource inventory system with availability constraints.",
+                "image": "/projects/facility-management.jpg",
+                "repo": "https://github.com/rajkrish63/College-inventory-management",
+                "stack": ["React", "Node.js", "Express.js", "MongoDB"]
+            },
+            {
+                "id": "3",
+                "title": "E-Commerce Mobile App",
+                "category": "Mobile Application",
+                "year": "2025",
+                "description": "A production-ready React Native e-commerce application with WooCommerce integration, real-time product search, multi-brand architecture, cart management, secure checkout, and full order tracking — built for scale.",
+                "image": "/projects/ecommerce-app.jpg",
+                "repo": "https://github.com/rajkrish63/Ecommerce-App",
+                "stack": ["React Native", "TypeScript", "WooCommerce", "Zustand", "REST APIs"]
+            },
+            {
+                "id": "4",
+                "title": "Lecture AI",
+                "category": "AI Application",
+                "year": "2025",
+                "description": "An AI-powered lecture summarization and analysis app built with React Native. Records live audio, transcribes speech in real time, generates structured meeting summaries, and provides searchable transcript history.",
+                "image": "/projects/lecture-ai.jpg",
+                "repo": "https://github.com/rajkrish63/Lecture-Ai",
+                "stack": ["React Native", "Whisper", "Ollama", "Node.js", "Local LLMs"]
+            },
+            {
+                "id": "5",
+                "title": "Smart Attendance System",
+                "category": "Web Application",
+                "year": "2025",
+                "description": "A comprehensive attendance management system built for Educational Institutions - featuring robust authentication, automated attendance marking, detailed reporting, and intuitive classroom management tools.",
+                "image": "/projects/smart-attandence-system.png",
+                "repo": "https://github.com/rajkrish63/smart-attandence-system",
+                "stack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Python", "OpenCV"]
+            }
+        ]
+    },
+    "roadmap": {
+        "description": "A timeline of learning milestones — from first principles to full-stack and AI development.",
+        "items": [
+            {
+                "id": "01",
+                "year": "2022",
+                "description": "Started my programming journey by studying the fundamentals — algorithms, logic, and problem-solving. Learned how to think like a developer before writing a single line of production code.",
+                "tags": ["Programming Fundamentals", "Problem Solving", "Algorithms"]
+            },
+            {
+                "id": "02",
+                "year": "2023",
+                "description": "Built my first web projects using HTML, CSS, and JavaScript. Learned how the browser works, how the DOM behaves, and how to take a design from concept to a working interface.",
+                "tags": ["HTML", "CSS", "JavaScript", "Web Fundamentals"]
+            },
+            {
+                "id": "03",
+                "year": "2024",
+                "description": "Moved into full stack development — React on the frontend, Node.js and Express on the backend, MongoDB for data. Built my first complete web application: a College Inventory Management System.",
+                "tags": ["React", "Node.js", "Express.js", "MongoDB"]
+            },
+            {
+                "id": "04",
+                "year": "2025",
+                "description": "Expanded into mobile with React Native and Expo. Shipped an e-commerce app with WooCommerce integration. Started exploring AI-powered applications using local LLMs, Whisper, and RAG architectures.",
+                "tags": ["React Native", "Expo", "Ollama", "Whisper", "RAG"]
+            },
+            {
+                "id": "05",
+                "year": "2026",
+                "description": "Focused on production-grade software — performance, architecture, and reliability. Deepening expertise in AI integration, enterprise-scale React Native apps, and system design as I prepare to graduate and enter the industry.",
+                "tags": ["Next.js", "TypeScript", "System Design", "AI Integration"]
+            }
+        ]
+    },
+    "contact": {
+        "description": "Open to full stack, React Native, and AI-related internships or full-time roles. Let's build something that matters.",
+        "email": "rajkrish2255@gmail.com",
+        "phone": "Available on request"
+    },
+    "social": {
+        "title": "SOCIAL",
+        "items": [
+            { "label": "GitHub", "href": "https://github.com/rajkrish63" },
+            { "label": "LinkedIn", "href": "https://www.linkedin.com/in/rajesh-s-337414256/" }
+        ]
+    }
+}
