@@ -3,6 +3,7 @@ import {
     DialogContent,
     DialogHeader,
     DialogTitle,
+    DialogDescription,
 } from "@/components/ui/dialog";
 
 import { useLanguage } from "@/providers/language-provider";
@@ -30,6 +31,9 @@ export function AboutModal({ open, onOpenChange }: AboutModalProps) {
                         <DialogTitle className="text-2xl font-bold tracking-tight">
                             {content.about.title}
                         </DialogTitle>
+                        <DialogDescription className="sr-only">
+                            Detailed information about Rajesh
+                        </DialogDescription>
                     </DialogHeader>
                 </div>
 

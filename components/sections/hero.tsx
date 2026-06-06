@@ -112,7 +112,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.div
-                style={{ opacity, scale, y, filter }}
+                style={{ opacity, scale, y, filter, contain: "layout paint" }}
                 className="relative z-20 flex-1 flex flex-col gap-4 sm:gap-8 xl:gap-10 justify-end w-full h-full will-change-[opacity,transform,filter]"
             >
 

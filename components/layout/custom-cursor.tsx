@@ -83,6 +83,7 @@ export function CustomCursor() {
                 translateY: "-50%",
                 opacity: isVisible ? 1 : 0,
                 zIndex: 9999,
+                contain: "layout paint",
             }}
         >
             <motion.div
