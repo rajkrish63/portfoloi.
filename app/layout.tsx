@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+11import type { Metadata } from "next";
 import { Inter, Syne, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/providers/smooth-scroll-provider";
@@ -9,6 +9,7 @@ import { CustomCursor } from "@/components/layout/custom-cursor";
 import Navbar from "@/components/layout/navbar";
 import { APP_CONFIG } from "@/lib/constants";
 import { getDictionary, getContents } from "@/lib/loaders";
+import { Analytics } from "@vercel/analytics/react";
 
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -51,6 +52,7 @@ export default async function RootLayout({
               <Navbar />
               {children}
             </SmoothScroll>
+            <Analytics />
           </ThemeProvider>
         </LanguageProvider>
       </body>
