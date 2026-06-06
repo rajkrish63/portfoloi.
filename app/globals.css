@@ -99,9 +99,9 @@
 
 :root {
   --radius: 0rem; /* Strictly sharp corners for that "UI" look */
-  --background: oklch(69.275% 0.00008 271.152); /* Classic Light Gray */
+  --background: oklch(90.06% 0.0001 271.152); /* Classic Light Gray */
   --foreground: oklch(0 0 0); /* Pure Black Text */
-  --card: oklch(0.92 0 0);
+  --card: oklch(100% 0.00011 271.152);
   --card-foreground: oklch(0 0 0);
   --popover: oklch(0.92 0 0);
   --popover-foreground: oklch(0 0 0);
@@ -135,7 +135,7 @@
 
 /* shadcn-ui only */
 .dark {
-  --background: oklch(43.861% 0.00005 271.152);
+  --background: oklch(42.024% 0.00005 271.152);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);

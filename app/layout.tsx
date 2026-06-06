@@ -1,4 +1,4 @@
-11import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Inter, Syne, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/providers/smooth-scroll-provider";

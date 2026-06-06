@@ -28,7 +28,7 @@
                     { "name": "TypeScript", "icon": "https://cdn.simpleicons.org/typescript" },
                     { "name": "JavaScript", "icon": "https://cdn.simpleicons.org/javascript" },
                     { "name": "Tailwind CSS", "icon": "https://cdn.simpleicons.org/tailwindcss" },
-                    { "name": "Zustand", "icon": "https://cdn.simpleicons.org/zustand" },
+                    { "name": "Zustand", "icon": "/zustand.jpg" },
                     { "name": "Framer Motion", "icon": "https://cdn.simpleicons.org/framer" },
                     { "name": "HTML5", "icon": "https://cdn.simpleicons.org/html5" },
                     { "name": "CSS3", "icon": "https://www.svgrepo.com/show/452185/css-3.svg" }
@@ -40,7 +40,7 @@
                     { "name": "React Native", "icon": "https://cdn.simpleicons.org/react" },
                     { "name": "Expo", "icon": "https://cdn.simpleicons.org/expo" },
                     { "name": "TypeScript", "icon": "https://cdn.simpleicons.org/typescript" },
-                    { "name": "Zustand", "icon": "https://cdn.simpleicons.org/zustand" }
+                    { "name": "Zustand", "icon": "/zustand.jpg" }
                 ]
             },
             {
