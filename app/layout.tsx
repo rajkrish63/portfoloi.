@@ -43,7 +43,7 @@ export default async function RootLayout({
         <LanguageProvider lang={lang} dictionary={dictionary} contents={contents}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
             enableSystem={false}
           >
             <CustomCursor />
