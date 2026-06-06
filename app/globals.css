@@ -97,28 +97,37 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-:root {
-  --radius: 0rem; /* Strictly sharp corners for that "UI" look */
-  --background: oklch(71.547% 0.00008 271.152); /* Classic Light Gray */
-  --foreground: oklch(0 0 0); /* Pure Black Text */
+:root1 {
+  --radius: 0rem;
+  /* Strictly sharp corners for that "UI" look */
+  --background: oklch(71.547% 0.00008 271.152);
+  /* Classic Light Gray */
+  --foreground: oklch(0 0 0);
+  /* Pure Black Text */
   --card: oklch(0.92 0 0);
   --card-foreground: oklch(0 0 0);
   --popover: oklch(0.92 0 0);
   --popover-foreground: oklch(0 0 0);
-  --primary: oklch(0.45 0.08 190); /* The Classic Teal */
+  --primary: oklch(0.45 0.08 190);
+  /* The Classic Teal */
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.8 0 0); /* Darker System Gray */
+  --secondary: oklch(0.8 0 0);
+  /* Darker System Gray */
   --secondary-foreground: oklch(0 0 0);
   --muted: oklch(0.8 0 0);
   --muted-foreground: oklch(0.4 0 0);
-  --accent: oklch(0.5 0 0); /* Windows Title Bar Gray */
+  --accent: oklch(0.5 0 0);
+  /* Windows Title Bar Gray */
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.5 0.15 25);
-  --border: oklch(0.7 0 0); /* High contrast borders */
-  --input: oklch(1 0 0); /* White input fields */
+  --border: oklch(0.7 0 0);
+  /* High contrast borders */
+  --input: oklch(1 0 0);
+  /* White input fields */
   --ring: oklch(0.45 0.08 190);
   --chart-1: oklch(0.45 0.08 190);
-  --chart-2: oklch(0.3 0.05 250); /* Classic Navy Blue */
+  --chart-2: oklch(0.3 0.05 250);
+  /* Classic Navy Blue */
   --chart-3: oklch(0.6 0.1 120);
   --chart-4: oklch(0.8 0.1 60);
   --chart-5: oklch(0.5 0 0);
@@ -134,8 +143,8 @@
 
 
 /* shadcn-ui only */
-.dark {
-  --background: oklch(43.861% 0.00005 271.152);
+.root {
+  --background: oklch(71.547% 0.00008 271.152);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
