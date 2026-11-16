@@ -20,7 +20,7 @@ export default function ManifestoFlow({ reverse = false }: { reverse?: boolean }
 
       <div className="flex w-full overflow-hidden marquee-track pointer-events-auto">
 
-        <div className={`animate-scroll flex min-w-full shrink-0 items-center justify-around gap-8 pr-8 xl:gap-16 xl:pr-16 ${reverse ? 'direction-reverse' : ''}`}>
+        <div className={`animate-scroll flex min-w-full shrink-0 items-center justify-around gap-8 pr-8 xl:gap-16 xl:pr-16 ${reverse ? '[animation-direction:reverse]' : ''}`}>
           {manifestoItems.map((item: string, index: number) => (
             <div key={`t1-${index}`} className="flex items-center gap-8 xl:gap-16">
               <span
@@ -33,7 +33,7 @@ export default function ManifestoFlow({ reverse = false }: { reverse?: boolean }
           ))}
         </div>
 
-        <div className={`animate-scroll flex min-w-full shrink-0 items-center justify-around gap-8 pr-8 xl:gap-16 xl:pr-16 ${reverse ? 'direction-reverse' : ''}`}>
+        <div className={`animate-scroll flex min-w-full shrink-0 items-center justify-around gap-8 pr-8 xl:gap-16 xl:pr-16 ${reverse ? '[animation-direction:reverse]' : ''}`}>
           {manifestoItems.map((item: string, index: number) => (
             <div key={`t2-${index}`} className="flex items-center gap-8 xl:gap-16">
               <span

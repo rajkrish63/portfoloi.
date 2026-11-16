@@ -1,68 +1,52 @@
-<a href="README.md">
-  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
-</a>
-<a href="README-TR.md">
-  <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
-</a>
-
-  <br />
-  <br />
-
 <div align="center">
-  <img src="public/logo.png" width="120" height="120" />
+  <img src="/logo.png" width="120" height="120" alt="Rajesh Portfolio Logo" />
   <br />
   <br />
+
+  <h1>Rajesh Portfolio</h1>
 
   <p>
-     A personal portfolio website inspired by the design quality of Awwwards.
+     A modern, interactive personal developer portfolio built with Next.js, React, Tailwind CSS, and Framer Motion.
   </p>
 
-![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-purple?style=for-the-badge&logo=framer)
-![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
     <a href="#features">Features</a> •
-    <a href="#tech">Technologies</a> •
+    <a href="#technologies">Technologies</a> •
     <a href="#installation">Installation</a> •
     <a href="#license">License</a>
   </p>
 
   <br />
-  <br />
 </div>
-
-## ❤️ Thank you for your support!
-
-Seeing this project receive stars and forks recently has made me really happy. I originally built it just for myself. I know that changing the personal information to use it in your own portfolio might be a bit inconvenient. To solve this, I'll be working on improvements to make customization easier.
 
 ## 📋 About
 
-**Kintarowwards** is an open-source, highly interactive personal portfolio template inspired by top-tier Awwwards-winning websites. It features smooth scrolling, physics-based micro-interactions, dynamic theme switching, and a fully multilingual system designed to deliver a premium user experience. Every detail is crafted to leave a lasting impression while maintaining high performance and clean code standards.
+Personal portfolio of **Rajesh S**, a Full Stack and React Native Developer based in Tamil Nadu, India. It showcases real-world projects across web, mobile, and AI integration with smooth scrolling, physics-based micro-interactions, responsive design, and clean architecture.
 
 ## <a id="features"></a> ✨ Features
 
-- **Advanced Animations**: Fluid transitions and micro-interactions with Framer Motion and Motion libraries.
-- **3D Experiences**: Deep visual elements with React Three Fiber (R3F) and Three.js integration.
-- **Physics-Based Components**: Dynamic and physics-compliant UI elements like "Hanging Profile" that respond to mouse movements.
-- **Smooth Scroll**: A modern and high-quality scrolling experience with Lenis integration.
-- **Dynamic Theme Support**: Optimized Dark and Light mode transitions with next-themes.
-- **Multi-language Support**: Extensible language options for global users.
-- **Responsive Design**: A mobile-first interface that looks perfect on all devices.
+- **Fluid Animations**: Smooth transitions and scroll-linked micro-interactions with Framer Motion.
+- **Horizontal Project Showcase**: Sticky horizontal track on desktop with spring physics and detailed project dialog modals.
+- **Interactive Career Roadmap**: SVG-based animated milestone timeline tracking learning and career growth.
+- **Physics-Based Hanging Profile**: Interactive physics swinging badge with drag interactions.
+- **Smooth Scroll**: Native-feeling smooth scrolling powered by Lenis.
+- **Responsive Layout**: Designed mobile-first, adapting seamlessly across handheld and ultra-wide displays.
 
 ## <a id="technologies"></a> 🛠️ Technologies
 
-- **Next.js**: The core React framework used for routing, server-side rendering, and performance optimization.
-- **Tailwind CSS**: Utility-first CSS framework for rapid and responsive UI styling.
-- **TypeScript**: Ensures type safety and provides a superior developer experience with clean architecture.
-- **Framer Motion**: Powers the complex, physics-based UI animations, transitions, and gesture interactions.
-- **Three.js**: Integrated via React Three Fiber to render interactive and lightweight 3D scenes natively.
-- **Shadcn/UI**: Provides accessible, beautifully designed, and customizable core UI components.
-- **Lucide React**: A clean and consistent icon library used for UI navigation and actions.
-- **Lenis**: Delivers a silky-smooth, native-feeling scroll experience across all devices.
+- **Next.js (App Router)**: Framework for performant routing, server rendering, and asset optimization.
+- **TypeScript**: Complete type safety across components, content dictionaries, and hooks.
+- **Tailwind CSS v4**: Modern utility-first styling with OKLCH theme color tokens.
+- **Framer Motion**: Powers physics-based UI animations, page transitions, and gestures.
+- **Lenis**: High-performance smooth scrolling engine with modal scroll locking.
+- **Lucide React**: Clean, lightweight icons for UI navigation and project links.
 
 ## <a id="installation"></a> 🚀 Installation
 
@@ -71,8 +55,8 @@ Follow the steps below to run the project in your local environment:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/xkintaro/kintarowwwards.git
-   cd kintarowwwards
+   git clone https://github.com/rajkrish63/portfolio.git
+   cd portfolio
    ```
 
 2. **Install dependencies:**
@@ -87,14 +71,8 @@ Follow the steps below to run the project in your local environment:
    npm run dev
    ```
 
-You can view the project by visiting [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
 ## 📄 License <a id="license"></a>
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-#
-
-<p align="center">
-  <sub>❤️ Developed by "Mustafa TAŞAL" (kintaro)</sub>
-</p>

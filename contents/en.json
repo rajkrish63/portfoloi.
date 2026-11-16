@@ -46,6 +46,7 @@
             {
                 "title": "Backend & Databases",
                 "items": [
+                    { "name": "Python", "icon": "https://cdn.simpleicons.org/python" },
                     { "name": "Node.js", "icon": "https://cdn.simpleicons.org/nodedotjs" },
                     { "name": "Express.js", "icon": "https://cdn.simpleicons.org/express" },
                     { "name": "MongoDB", "icon": "https://cdn.simpleicons.org/mongodb" },
@@ -122,6 +123,17 @@
                 "image": "/projects/smart-attandence-system.png",
                 "repo": "https://github.com/rajkrish63/smart-attandence-system",
                 "stack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Python", "OpenCV"]
+            },
+            {
+                "id": "6",
+                "title": "SKANDX Auctions",
+                "category": "Web Application",
+                "year": "2026",
+                "description": "An institutional discovery and verification platform for Indian bank auction and distressed properties under the SARFAESI Act. Features a decoupled React 19 SPA, Python multi-threaded REST backend, Supabase PostgreSQL, Playwright automated crawler, and Google Gemini Multimodal AI OCR engine.",
+                "image": "/projects/real-estate-auction.png",
+                "demo": "https://real-state-action-nu.vercel.app/",
+                "repo": "https://github.com/zenitroX/real-estate-auction-.git",
+                "stack": ["React", "Python", "Tailwind CSS", "Supabase", "Gemini AI", "Playwright"]
             }
         ]
     },

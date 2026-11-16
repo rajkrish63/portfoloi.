@@ -19,7 +19,7 @@ export default function ScrollProgress({ className }: ScrollProgressProps) {
     return (
         <motion.div
             className={cn(
-                "fixed top-0 left-0 right-0 h-1 bg-primary origin-left z-99999 pointer-events-none will-change-transform",
+                "fixed top-0 left-0 right-0 h-1 bg-primary origin-left z-[99999] pointer-events-none will-change-transform",
                 className
             )}
             style={{ scaleX, contain: "strict" }}

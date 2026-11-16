@@ -7,6 +7,7 @@ export function HangingProfile() {
   const boxRef = useRef<HTMLDivElement>(null);
   const ropeRef = useRef<SVGLineElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const wakeRef = useRef<() => void>(() => {});
 
   const gravity = 1.2;
   const ropeLength = 180;
@@ -23,10 +24,16 @@ export function HangingProfile() {
 
   useEffect(() => {
     let animationFrameId: number;
+    let isRunning = true;
+    let isVisible = true;
 
-    const updatePhysics = (time: number) => {
+    const updatePhysics = () => {
+      if (!isVisible) {
+        isRunning = false;
+        return;
+      }
+
       if (!state.current.isDragging) {
-
         state.current.currentLength += (ropeLength - state.current.currentLength) * 0.1;
 
         const acceleration = (-gravity / state.current.currentLength) * Math.sin(state.current.angle);
@@ -34,9 +41,28 @@ export function HangingProfile() {
         state.current.velocity += acceleration;
         state.current.velocity *= damping;
         state.current.angle += state.current.velocity;
+
+        // Sleep when motion has damped down to imperceptible levels
+        if (
+          Math.abs(state.current.velocity) < 0.00005 &&
+          Math.abs(state.current.angle) < 0.0005 &&
+          Math.abs(state.current.currentLength - ropeLength) < 0.05
+        ) {
+          state.current.velocity = 0;
+          state.current.angle = 0;
+          state.current.currentLength = ropeLength;
+
+          if (boxRef.current && ropeRef.current) {
+            ropeRef.current.setAttribute("x2", "150");
+            ropeRef.current.setAttribute("y2", ropeLength.toString());
+            boxRef.current.style.transform = `translate(0px, ${ropeLength}px) rotate(0rad)`;
+          }
+
+          isRunning = false;
+          return;
+        }
       } else {
         const dx = state.current.dragX;
-
         const dy = Math.max(state.current.dragY, 10);
 
         let targetAngle = Math.atan2(dx, dy);
@@ -66,14 +92,44 @@ export function HangingProfile() {
       animationFrameId = requestAnimationFrame(updatePhysics);
     };
 
+    const wakeAnimation = () => {
+      if (!isRunning) {
+        isRunning = true;
+        animationFrameId = requestAnimationFrame(updatePhysics);
+      }
+    };
+
+    // Attach wake handle to ref so pointer events can resume animation
+    wakeRef.current = wakeAnimation;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+      if (isVisible) {
+        wakeAnimation();
+      }
+    });
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
     animationFrameId = requestAnimationFrame(updatePhysics);
-    return () => cancelAnimationFrame(animationFrameId);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      observer.disconnect();
+    };
   }, []);
 
   const handlePointerDown = (e: React.PointerEvent) => {
     state.current.isDragging = true;
     if (boxRef.current) {
       boxRef.current.style.cursor = "grabbing";
+    }
+
+    // Wake up physics loop if sleeping
+    if (wakeRef.current) {
+      wakeRef.current();
     }
 
     const updateMousePos = (ev: PointerEvent) => {

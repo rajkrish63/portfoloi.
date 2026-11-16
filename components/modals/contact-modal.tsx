@@ -50,17 +50,28 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                             </span>
                         </a>
 
-                        <a
-                            href={`tel:${content.contact.phone.replace(/\s+/g, '')}`}
-                            className="group flex items-center gap-4 px-5 py-2.5 rounded-full border border-border/50 bg-secondary/20 backdrop-blur-sm hover:bg-foreground hover:border-foreground/30 transition-all duration-500 ease-out"
-                        >
-                            <div className="w-8 h-8 rounded-full border border-border/50 bg-background flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-background transition-transform duration-500">
-                                <Phone className="w-3.5 h-3.5 text-foreground" />
+                        {/^\+?[\d\s-]+$/.test(content.contact.phone) ? (
+                            <a
+                                href={`tel:${content.contact.phone.replace(/\s+/g, '')}`}
+                                className="group flex items-center gap-4 px-5 py-2.5 rounded-full border border-border/50 bg-secondary/20 backdrop-blur-sm hover:bg-foreground hover:border-foreground/30 transition-all duration-500 ease-out"
+                            >
+                                <div className="w-8 h-8 rounded-full border border-border/50 bg-background flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-background transition-transform duration-500">
+                                    <Phone className="w-3.5 h-3.5 text-foreground" />
+                                </div>
+                                <span className="text-foreground tracking-wide font-medium text-sm group-hover:text-background transition-colors duration-500">
+                                    {content.contact.phone}
+                                </span>
+                            </a>
+                        ) : (
+                            <div className="flex items-center gap-4 px-5 py-2.5 rounded-full border border-border/50 bg-secondary/20 backdrop-blur-sm">
+                                <div className="w-8 h-8 rounded-full border border-border/50 bg-background flex items-center justify-center shrink-0">
+                                    <Phone className="w-3.5 h-3.5 text-foreground" />
+                                </div>
+                                <span className="text-muted-foreground tracking-wide font-medium text-sm">
+                                    {content.contact.phone}
+                                </span>
                             </div>
-                            <span className="text-foreground tracking-wide font-medium text-sm group-hover:text-background transition-colors duration-500">
-                                {content.contact.phone}
-                            </span>
-                        </a>
+                        )}
                     </div>
 
                     <div className="flex flex-wrap gap-3 items-center mt-6 sm:mt-8">

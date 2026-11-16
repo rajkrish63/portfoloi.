@@ -10,5 +10,9 @@ export function useLenisModal(open: boolean) {
         } else {
             lenis?.start();
         }
+
+        return () => {
+            lenis?.start();
+        };
     }, [open, lenis]);
 }

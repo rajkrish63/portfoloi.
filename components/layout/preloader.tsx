@@ -2,15 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "next-themes";
 
 export function Preloader() {
     const [isLoading, setIsLoading] = useState(true);
-    const { theme } = useTheme();
 
     useEffect(() => {
-        setIsLoading(true);
-
         const timer = setTimeout(() => {
             setIsLoading(false);
             document.body.style.overflow = "";
@@ -22,7 +18,7 @@ export function Preloader() {
             clearTimeout(timer);
             document.body.style.overflow = "";
         };
-    }, [theme]);
+    }, []);
 
     return (
         <AnimatePresence>
@@ -34,7 +30,7 @@ export function Preloader() {
                         y: "-100%",
                         transition: { duration: 0.9, ease: [0.76, 0, 0.24, 1] }
                     }}
-                    className="fixed inset-0 z-99999 flex flex-col items-center justify-center bg-background pointer-events-auto"
+                    className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-background pointer-events-auto"
                 >
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}

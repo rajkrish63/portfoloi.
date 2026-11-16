@@ -54,22 +54,33 @@ export default function Contact() {
                         </a>
                     </BlurReveal>
                     <BlurReveal>
-                        <a
-                            href={`tel:${content.contact.phone.replace(/\s+/g, '')}`}
-                            className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
-                        >
-                            <span className="text-sm font-mono tracking-widest text-muted-foreground uppercase mb-4 md:mb-0 transition-colors duration-500 group-hover:text-foreground">
-                                {content.contact.direct_line}
-                            </span>
-                            <div className="flex items-center gap-8">
-                                <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
+                        {/^\+?[\d\s-]+$/.test(content.contact.phone) ? (
+                            <a
+                                href={`tel:${content.contact.phone.replace(/\s+/g, '')}`}
+                                className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
+                            >
+                                <span className="text-sm font-mono tracking-widest text-muted-foreground uppercase mb-4 md:mb-0 transition-colors duration-500 group-hover:text-foreground">
+                                    {content.contact.direct_line}
+                                </span>
+                                <div className="flex items-center gap-8">
+                                    <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
+                                        {content.contact.phone}
+                                    </span>
+                                    <div className="w-10 h-10 rounded-full border border-border/50 items-center justify-center bg-background group-hover:bg-foreground group-hover:border-foreground transition-all duration-700 shrink-0 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
+                                        <ArrowUpRight className="w-6 h-6 text-foreground group-hover:text-background transition-colors duration-500" />
+                                    </div>
+                                </div>
+                            </a>
+                        ) : (
+                            <div className="flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8">
+                                <span className="text-sm font-mono tracking-widest text-muted-foreground uppercase mb-4 md:mb-0">
+                                    {content.contact.direct_line}
+                                </span>
+                                <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-muted-foreground">
                                     {content.contact.phone}
                                 </span>
-                                <div className="w-10 h-10 rounded-full border border-border/50 items-center justify-center bg-background group-hover:bg-foreground group-hover:border-foreground transition-all duration-700 shrink-0 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
-                                    <ArrowUpRight className="w-6 h-6 text-foreground group-hover:text-background transition-colors duration-500" />
-                                </div>
                             </div>
-                        </a>
+                        )}
                     </BlurReveal>
                 </div>
 

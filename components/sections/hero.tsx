@@ -4,6 +4,7 @@ import { useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import { useScroll, useTransform, useMotionTemplate, motion } from "framer-motion";
 import { useLanguage } from "@/providers/language-provider";
+import { useLenis } from "@/providers/smooth-scroll-provider";
 import { ArrowRight, Mouse } from "lucide-react";
 import { ContactModal } from "@/components/modals/contact-modal";
 
@@ -39,12 +40,18 @@ export default function Hero() {
     const col1Images = [...track1, ...track1];
     const col2Images = [...track2, ...track2];
 
+    const lenis = useLenis();
+
     const scrollToProjects = useCallback(() => {
-        const projectsSection = document.getElementById("projects");
-        if (projectsSection) {
-            projectsSection.scrollIntoView({ behavior: "smooth" });
+        if (lenis) {
+            lenis.scrollTo("#projects", { duration: 1.2 });
+        } else {
+            const projectsSection = document.getElementById("projects");
+            if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: "smooth" });
+            }
         }
-    }, []);
+    }, [lenis]);
 
     return (
         <section
